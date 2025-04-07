@@ -2,4 +2,4 @@
 
 **description**
 
- `<P>`this project will contain all the types of data structure and algothrims</p>
+this project will contain all the types of data structure and algothrims
