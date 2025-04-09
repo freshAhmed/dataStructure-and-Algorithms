@@ -1,4 +1,4 @@
-from LinkedList.ExceptionEmpty import Empty
+from ExceptionEmpty import Empty
 
 
 class _DoublyLinkedList:
@@ -36,5 +36,7 @@ class _DoublyLinkedList:
   self.size-=1
   return element
  
+ def __len__(self):
+  return self.size 
 
  
