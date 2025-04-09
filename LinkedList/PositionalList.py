@@ -1,6 +1,6 @@
 
 
-from LinkedList.DoublyLinkedList import _DoublyLinkedList
+from DoublyLinkedList import _DoublyLinkedList
 import logging
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 class PositionalList(_DoublyLinkedList):
@@ -38,7 +38,7 @@ class PositionalList(_DoublyLinkedList):
   def last(self):
     return self._make_position(self.trailer._prev)
   
-  def befor(self,p):
+  def before(self,p):
     node =self.__validate(p)
     return self._make_position(node._prev)
   
@@ -51,9 +51,9 @@ class PositionalList(_DoublyLinkedList):
   
   def delete(self,p):
     origianl=self.__validate(p)
-    return self._delete_node(origianl.node)
+    return self._delete_node(origianl)
   
-  def add_befor(self,e,p):
+  def add_before(self,e,p):
    original=self.__validate(p)
    return self._insert_between(e,original._prev,original)
   
